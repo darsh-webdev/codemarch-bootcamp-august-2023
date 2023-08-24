@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h1>&#128221; Feedback Form</h1>
+    <h2>Our Location</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1886.8530130662934!2d72.8298189!3d18.944402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a115555555%3A0x7fa7740275f81939!2sSt.%20Xavier&#39;s%20High%20School!5e0!3m2!1sen!2sin!4v1691234958223!5m2!1sen!2sin"
+      width="400"
+      height="250"
+    ></iframe>
+
+    <h2>Our Theme Song</h2>
+    <audio controls>
+      <source
+        src="https://pagalsong.in/uploads/systemuploads/mp3/Sanju/Kar Har Maidaan Fateh (Sanju) 128 Kbps.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <h2>Canvas Placeholder Image</h2>
+    <canvas
+      width="250"
+      height="150"
+      id="myCanvas"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <form>
+      <h2>Feedback Form</h2>
+      <label for="name">Name:</label><br />
+      <input type="text" name="name" /><br />
+      <label for="email">Email:</label><br />
+      <input type="text" name="email" /><br />
+      <label for="feedback">Feedback:</label><br />
+      <textarea cols="30" rows="3" name="feedback"></textarea><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      <!--Draw a rectangle-->
+      ctx.fillStyle = "blue";
+      ctx.fillRect(30, 30, 150, 80);
+    </script>
+  </body>
+</html>

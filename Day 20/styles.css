@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  background-color: #1f6370;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.primary-btn {
+  background-color: #333333;
+  border: none;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: 0.8;
+}
+
+#home {
+  background-color: #f9f5f6;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 43px;
+}
+
+#home h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#services {
+  background-color: #fff;
+  height: max-content;
+  padding-top: 43px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.service-block {
+  max-width: 600px;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.service-block img {
+  width: 400px;
+  border-radius: 6px;
+  box-shadow: 8px 8px 12px 6px #1f6370;
+  margin-bottom: 20px;
+}
+
+.service-block img:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
+.service-block p {
+  font-size: 0.9rem;
+}
+
+#contact {
+  padding: 43px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-container img {
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+}
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  text-align: start;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+form .primary-btn {
+  margin: 30px;
+}
+
+footer {
+  background-color: #333333;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}

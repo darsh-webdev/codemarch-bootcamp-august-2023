@@ -1,0 +1,15 @@
+/* To change the color of list items */
+li {
+  color: red;
+}
+
+/* To change the color of elements having class "brown-text" */
+.brown-text {
+  color: brown;
+}
+
+/* To change the color of element having an id of "bold-magenta" */
+#bold-magenta {
+  color: magenta;
+  font-weight: 900;
+}

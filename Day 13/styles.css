@@ -1,0 +1,31 @@
+.title {
+  color: #d6cba3;
+  background-color: #012b23;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 12px 15px green;
+}
+
+p {
+  color: #4a6964;
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 0.5;
+}
+
+.flag {
+  filter: contrast(120%);
+  height: 145px;
+  background: url("https://mdjunaidap.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd61781a3-ed24-4e9f-aed2-abe44cb73b96%2Fflag.webp?table=block&id=bd5c3d4f-d811-4ccd-bac8-f9bd0ad31b20&spaceId=858e5087-9a93-4268-b61a-72a222916afe&width=2000&userId=&cache=v2");
+  background-repeat: no-repeat;
+  background-position: 0 -143px;
+}
+
+.flag:hover {
+  height: 142px;
+  width: 270px;
+  background: url("https://mdjunaidap.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd61781a3-ed24-4e9f-aed2-abe44cb73b96%2Fflag.webp?table=block&id=bd5c3d4f-d811-4ccd-bac8-f9bd0ad31b20&spaceId=858e5087-9a93-4268-b61a-72a222916afe&width=2000&userId=&cache=v2");
+  background-repeat: no-repeat;
+  background-position: 145 -143px;
+  box-shadow: 8px 10px 15px red;
+}

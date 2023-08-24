@@ -1,0 +1,32 @@
+.title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #1677ff;
+}
+
+nav {
+  background-color: #072541;
+  text-align: center;
+}
+ul {
+  padding: 8px;
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+  padding: 8px 15px;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #0071bd;
+}

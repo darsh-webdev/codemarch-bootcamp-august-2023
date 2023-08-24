@@ -1,0 +1,21 @@
+.title {
+  color: greenyellow; /* To change the font color of heading */
+  background-color: darkgreen; /* To change the background color of heading */
+  padding: 20px; /* Add padding to heading */
+  margin: 20px; /* Add margin to heading */
+}
+
+.description {
+  color: rgb(255, 255, 255); /* To change the font color */
+  background-color: blueviolet; /* To change the background color of paragraph */
+  padding: 10px; /* Add padding to paragraph */
+  margin: 30px; /* Add margin to paragraph */
+}
+
+.box {
+  width: 200px; /* To set the width of the div */
+  height: 200px; /* To set the height of the div */
+  background-color: aqua; /* To change the background color of div */
+  margin: auto; /* Add margin to div to center it */
+  border: 2px dashed red; /* To set the border as 2px dashed and color red of the div */
+}

@@ -1,0 +1,15 @@
+.container {
+  background-color: #128c7e; /* To set background color of container div */
+  padding: 20px; /* To add padding to container div */
+  margin: 10px; /* To add margin to container div */
+}
+
+.inner {
+  background-color: #ece5dd; /* To set background color of inner div */
+  padding: 10px; /* To add padding to inner div */
+}
+
+.outer {
+  background-color: #dcf8c6; /* To set background color of outer div */
+  margin: 20px; /* To add margin to outer div */
+}

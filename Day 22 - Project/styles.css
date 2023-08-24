@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header and Navbar */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 55px;
+  background-color: #333333;
+  padding: 0 15%;
+  position: sticky;
+  top: 0;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand img {
+  border-radius: 50%;
+  height: 45px;
+  opacity: 0.8;
+}
+
+.brand h1 {
+  color: #ffffff;
+  margin: 8px;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  list-style: none;
+  margin-left: 18px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+.navbar a span {
+  background-color: rgb(249, 249, 249);
+  line-height: 1;
+  padding: 1px 0;
+  white-space: nowrap;
+  margin-top: 3px;
+  position: relative;
+  visibility: hidden;
+}
+
+.navbar a.active span{
+    visibility: visible;
+}
+
+.navbar a:hover span {
+  visibility: visible;
+  transform-origin: left right;
+  transform: scaleX(0);
+  transition: all 750ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+/* Hero Section */
+
+#hero {
+  height: max-content;
+  background-color: #fdf1e9;
+  padding: 55px 15%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.cta-wrapper {
+  width: 60%;
+}
+
+.cta-wrapper h1 {
+  font-size: 3rem;
+  max-width: 75%;
+  color: #333;
+  margin: 0;
+}
+
+.cta-wrapper p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: justify;
+  max-width: 90%;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.orange-text {
+  color: #e67d23;
+}
+
+.cta-btn {
+  background-color: #e67d23;
+  border: 0;
+  padding: 8px 18px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-family: inherit;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #333;
+  transition: ease-out 0.2s;
+}
+
+.user-imgs-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.user-imgs {
+  width: 50%;
+}
+
+.user-imgs img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  margin-left: -18px;
+  border: 2px solid #fdf1e9;
+}
+
+.user-imgs-wrapper p {
+  width: 70%;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  text-align: start;
+}
+
+.img-wrapper {
+  width: 40%;
+}
+
+.img-wrapper img {
+  height: 70vh;
+}
+
+/* Services Section */
+
+#services {
+  background-color: #1e1d22;
+  padding: 70px;
+}
+
+.services-header {
+  text-align: center;
+  color: #ffffff;
+}
+
+.services-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.red-text {
+  color: #f80036;
+  font-weight: 900;
+}
+
+.red-line-break {
+  height: 1.5px;
+  background-color: #f80036;
+  width: 150px;
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-line-break span {
+  border: 2px solid #f80036;
+  display: inline-block;
+  width: 50px;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.services-card-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  padding: 3% 8%;
+  gap: 50px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  background-color: #24252a;
+  padding: 30px;
+  height: 290px;
+  box-shadow: 2px 2px 5px;
+  border-radius: 2px;
+}
+
+.line-break {
+  height: 2px;
+  width: 100%;
+  background-color: #1c1d22;
+}
+
+.service-card h2 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.service-card p {
+  text-align: left;
+  color: #717271;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 20px auto;
+  font-size: 0.9rem;
+}
+
+.service-card a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.service-card .icon {
+  color: #f70037;
+}
+
+.service-card:hover{
+    transform: scale(1.10);
+    transition: all .3s;
+}

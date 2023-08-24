@@ -1,0 +1,112 @@
+body {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #4c4c6d;
+  padding: 15px;
+  margin-bottom: 40px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: end;
+}
+
+.navbar {
+  margin-right: 35px;
+}
+
+ul,
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #fffaf4;
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  margin-top: 50px;
+}
+
+.sidebar-left {
+  padding: 20px;
+  max-width: 60vw;
+}
+
+.sidebar-left h2 {
+  font-size: 1.5rem;
+}
+
+.sidebar-left p {
+  margin-bottom: 70px;
+}
+
+.sidebar-right {
+  float: right;
+  max-width: 40vw;
+}
+
+.sidebar-right img {
+  position: relative;
+  width: 40vw;
+  height: 50vh;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px;
+}
+
+.pagination button {
+  background-color: #2880b9;
+  padding: 8px 15px;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #2470a3;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  font-size: 0.6rem;
+  background-color: #101010;
+  color: #ffff;
+  padding: 3px;
+  position: absolute;
+  width: 90px;
+  z-index: 1;
+  top: -15px;
+  left: 0;
+  text-align: center;
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
