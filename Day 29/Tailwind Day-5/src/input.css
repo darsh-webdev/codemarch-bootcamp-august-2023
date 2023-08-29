@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .service-card {
+    @apply flex-1 flex flex-col text-center min-w-[250px] border-2 border-slate-300 rounded-lg shadow-md;
+  }
+
+  .service-card-img{
+    @apply w-full object-contain rounded-t-md;
+  }
+
+  .modal {
+    @apply fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50;
+  }
+
+  .modal-content {
+    @apply bg-white rounded-lg p-6 max-w-sm mx-auto;
+  }
+}

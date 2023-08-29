@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tailwind Day-5</title>
+  </head>
+  <body class="bg-slate-100">
+    <!--Navbar-->
+    <header class="bg-[#1F2937] fixed z-10 top-0 w-full h-12">
+      <nav class="flex justify-between py-3 px-20 flex-wrap">
+        <div class="logo">
+          <h1 class="capitalize text-white font-bold">logo</h1>
+        </div>
+        <ul class="flex justify-between text-white font-light gap-4">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-12">
+      <!--Home Section-->
+      <section id="home" class="bg-violet-500">
+        <div class="w-full text-center py-20">
+          <h1 class="text-3xl font-bold text-white mb-4">
+            Welcome to Our Website
+          </h1>
+          <p class="text-white font-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button
+            id="openModal"
+            class="mt-4 px-4 py-2 bg-white text-blue-500 rounded"
+          >
+            Contact Us
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+          <div
+            class="modal-content relative flex flex-col items-center text-center"
+          >
+            <div class="w-full flex justify-center items-center mb-4">
+              <h2 class="text-xl font-bold">Contact Us</h2>
+              <button
+                id="closeModal"
+                class="text-gray-500 hover:text-gray-800 absolute right-4 top-4"
+              >
+                X
+              </button>
+            </div>
+            <form class="w-full mt-5">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="mb-4 px-3 py-2 border rounded w-full"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="mb-4 px-3 py-2 border rounded w-full"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="mb-4 px-3 py-2 border rounded w-full"
+              ></textarea>
+              <button
+                type="submit"
+                class="mt-4 px-4 py-2 text-white bg-purple-700 rounded w-full"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Services Section-->
+      <section id="services" class="px-20 py-10">
+        <h1 class="font-bold text-xl text-center mb-4">Our Services</h1>
+        <div class="flex flex-wrap gap-4 items-center justify-center">
+          <div class="service-card">
+            <img
+              src="../images/Untitled (2).png"
+              class="service-card-img"
+              alt="desktop image"
+            />
+
+            <h1 class="font-bold my-2">Service 1</h1>
+            <p class="font-light text-sm mb-2 max-sm:max-w-xs">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="text-white text-sm font-semibold py-2 px-3 bg-blue-500 w-28 mx-auto rounded-md mb-3 hover:bg-blue-800"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            class="service-card"
+          >
+            <img
+              src="../images/Untitled (3).png"
+              class="service-card-img"
+              alt="desktop image"
+            />
+
+            <h1 class="font-bold my-2">Service 2</h1>
+            <p class="font-light text-sm mb-2 max-sm:max-w-xs">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="text-white text-sm font-semibold py-2 px-3 bg-blue-500 w-28 mx-auto rounded-md mb-3 hover:bg-blue-800"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            class="service-card"
+          >
+            <img
+              src="../images/Untitled (1).png"
+              class="service-card-img"
+              alt="desktop image"
+            />
+
+            <h1 class="font-bold my-2">Service 3</h1>
+            <p class="font-light text-sm mb-2 max-sm:max-w-xs">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="text-white text-sm font-semibold py-2 px-3 bg-blue-500 w-28 mx-auto rounded-md mb-3 hover:bg-blue-800"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+      <section id="contact" class="p-20">
+        <div
+          class="flex flex-row flex-wrap gap-4 justify-center items-stretch h-full"
+        >
+          <div class="flex-1 min-w-[350px] rounded-lg overflow-hidden hidden md:block">
+            <img
+              src="../images/Untitled.png"
+              class="object-cover h-full rounded-md"
+            />
+          </div>
+          <div class="flex-1 min-w-[350px] w-full bg-white p-5 rounded-lg">
+            <form>
+              <h1 class="text-center font-semibold text-xl">Get in Touch</h1>
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block text-slate-900 font-normal mb-2 text-sm"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-slate-900 font-normal mb-2 text-sm"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="name"
+                  placeholder="Enter your email"
+                  class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-slate-900 font-normal mb-2 text-sm"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  placeholder="Enter your message"
+                  class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Section-->
+    <footer
+      class="py-4 px-20 bg-[#1F2937] text-white text-center flex flex-wrap gap-10 justify-between md:py-6 lg:py-10 md:text-left"
+    >
+      <div class="flex-1 min-w-[300px]">
+        <h1 class="font-bold text-xl">About Us</h1>
+        <p class="text-slate-300 mt-3 text-sm">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fugiat
+          ea magnam. Reiciendis, voluptatem magnam tempora neque nesciunt fugit.
+        </p>
+      </div>
+      <div class="flex-1 min-w-[300px]">
+        <h1 class="font-bold text-xl">Contact Info</h1>
+        <p class="text-slate-300 mt-3 text-sm">123 Street, Bangalore</p>
+        <p class="text-slate-300 text-sm">codemarch@example.com</p>
+        <p class="text-slate-300 text-sm">+1 234 567 890</p>
+      </div>
+      <div class="flex-1 min-w-[300px]">
+        <h1 class="font-bold text-xl mb-3">Follow Us</h1>
+        <ul class="flex gap-4 text-slate-200 justify-center md:justify-start">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script>
+      const openModalButton = document.getElementById("openModal");
+      const closeModalButton = document.getElementById("closeModal");
+      const modal = document.getElementById("modal");
+
+      openModalButton.addEventListener("click", function () {
+        modal.classList.remove("hidden");
+      });
+
+      closeModalButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent form submission
+        modal.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
+  </body>
+</html>
